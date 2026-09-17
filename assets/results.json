@@ -1,0 +1,45 @@
+{
+  "source": "User-provided fixed-80 simulation and real-robot results, 2026-09-16",
+  "real_trials_per_policy": 20,
+  "sim_trials_per_policy": 80,
+  "scenes": ["Duo", "Flat", "G2"],
+  "tasks": {
+    "Cup": {
+      "policies": ["box80k", "cup1trim"],
+      "successes": {
+        "Duo": {"real": [18, 19], "sim": [21, 78]},
+        "Flat": {"real": [8, 7], "sim": [30, 59]},
+        "G2": {"real": [8, 16], "sim": [18, 47]}
+      }
+    },
+    "Tape": {
+      "policies": ["box80k", "tateno80k"],
+      "successes": {
+        "Duo": {"real": [14, 6], "sim": [20, 2]},
+        "Flat": {"real": [19, 1], "sim": [50, 14]},
+        "G2": {"real": [20, 16], "sim": [15, 14]}
+      }
+    },
+    "Pen": {
+      "policies": ["box80k", "tateno80k"],
+      "successes": {
+        "Duo": {"real": [17, 6], "sim": [25, 1]},
+        "Flat": {"real": [4, 0], "sim": [12, 0]},
+        "G2": {"real": [19, 7], "sim": [48, 0]}
+      }
+    },
+    "Tray": {
+      "policies": ["baseline40k", "contact40k"],
+      "successes": {
+        "Duo": {"real": [0, 0], "sim": [0, 0]},
+        "Flat": {"real": [0, 0], "sim": [0, 0]},
+        "G2": {"real": [0, 0], "sim": [0, 0]}
+      }
+    }
+  },
+  "pending_tasks": {
+    "Pyramid": "Simulation running; no completed results supplied",
+    "SPS": "Not reported in the supplied results"
+  },
+  "provenance_note": "These supplied counts do not change historical cohort validation or exclusion records in correlation36."
+}

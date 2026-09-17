@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fafaf8">
+  <title>YUBI-Real2Sim — 3DGS Scene Verification for Reliable Policy Evaluation</title>
+  <meta name="description" content="YUBI-Real2Sim connects 3D Gaussian Splatting scene reconstruction, dual fisheye wrist observations, and physical simulation to study reliable robot policy evaluation.">
+  <link rel="canonical" href="https://hirotin.github.io/hiroki.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="YUBI-Real2Sim">
+  <meta property="og:description" content="3DGS Scene Verification for Reliable Policy Evaluation">
+  <meta property="og:url" content="https://hirotin.github.io/hiroki.github.io/">
+  <meta property="og:image" content="https://hirotin.github.io/hiroki.github.io/assets/og.png">
+  <meta property="og:image:alt" content="YUBI-Real2Sim: 3DGS Scene Verification for Reliable Policy Evaluation">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="header">
+  <a class="wordmark" href="#">YUBI<span>—</span>Real2Sim<span class="brand-dot" aria-hidden="true"></span></a>
+  <nav aria-label="Main navigation"><a href="#overview">Overview</a><a href="#method">Method</a><a href="#results">Results</a><a href="#resources">Resources <span aria-hidden="true">↗</span></a></nav>
+</header>
+<main id="main">
+  <section class="hero container" aria-labelledby="project-title">
+    <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> ROBOT LEARNING · REAL-TO-SIMULATION</p>
+    <h1 id="project-title">YUBI-Real2Sim</h1>
+    <p class="hero-title">3DGS Scene Verification<br>for Reliable Policy Evaluation</p>
+    <p class="hero-description">When can a reconstructed world be trusted to evaluate a robot?<br class="desktop-break"> Connecting real scenes, fisheye vision, and policy performance.</p>
+    <p class="authors">Hiroki Nishizawa<sup>1,2</sup> <span>Takehiko Ohkawa<sup>1</sup></span> <span>Nicola Scianca<sup>1</sup></span><br class="desktop-break"> Tatsuya Matsushima<sup>1</sup> <span>Shigeo Morishima<sup>2</sup></span> <span>Kei Ota<sup>1</sup></span></p>
+    <p class="affiliations"><sup>1</sup> AIRoA <span><sup>2</sup> Waseda University</span></p>
+    <div class="hero-actions"><a class="button primary" href="https://github.com/Hirotin/YUBI-Real2Sim">Project repository <span aria-hidden="true">↗</span></a><a class="button secondary" href="#method">Explore the method <span aria-hidden="true">↓</span></a></div>
+    <figure class="hero-figure">
+      <div class="comparison">
+        <div class="comparison-panel"><img src="assets/real-scene.jpg" width="1920" height="1080" alt="Real dual-arm Franka robot with YUBI grippers facing a cup and plate on a laboratory table" fetchpriority="high"><span class="image-label"><i class="real-dot"></i> REAL WORLD</span></div>
+        <div class="comparison-panel"><img src="assets/sim-scene.jpg" width="1920" height="1080" alt="Reconstructed laboratory scene and robot used for simulation"><span class="image-label"><i class="sim-dot"></i> RECONSTRUCTED WORLD</span></div>
+      </div>
+      <figcaption><span class="figure-number">01 / REAL → SIM</span><span>A physical workspace becomes a reusable environment for policy evaluation.</span></figcaption>
+    </figure>
+  </section>
+
+  <section class="section container overview" id="overview" aria-labelledby="overview-title">
+    <div><p class="eyebrow">THE QUESTION</p><h2 id="overview-title">A realistic scene.<br>A reliable evaluation?</h2></div>
+    <div class="prose"><p>Evaluating vision–language–action policies on real robots is costly and difficult to reproduce. 3D Gaussian Splatting (3DGS) makes it possible to reconstruct real environments, but visual realism alone does not establish whether a simulator will select the better policy.</p><p><strong>YUBI-Real2Sim studies that connection.</strong> We combine scene reconstruction, object modeling, and MuJoCo simulation with the dual fisheye wrist views used by YUBI. Controlled changes to the reconstruction let us investigate how holes, floaters, and warped surfaces affect policy evaluation.</p></div>
+  </section>
+
+  <section class="method-band" id="method" aria-labelledby="method-title">
+    <div class="container section">
+      <div class="section-heading"><div><p class="eyebrow">THE FRAMEWORK</p><h2 id="method-title">From capture to closed-loop evaluation.</h2></div><p>Real-world appearance.<br>Physical interaction. The same wrist views.</p></div>
+      <div class="pipeline">
+        <article><div class="step-heading"><span>01</span><h3>Capture</h3></div><img src="assets/capture.jpg" alt="Fisheye frame captured in the real workspace" loading="lazy"><p>Capture the environment with a wide-angle camera, then project selected frames into pinhole views.</p><span class="tech-label">FISHEYE VIDEO</span></article>
+        <article><div class="step-heading"><span>02</span><h3>Reconstruct</h3></div><img src="assets/reconstruction.jpg" alt="Estimated camera poses and reconstructed scene geometry" loading="lazy"><p>Estimate camera poses and geometry, then optimize a 3D Gaussian Splatting background.</p><span class="tech-label">COLMAP · OpenMVS · 3DGS</span></article>
+        <article><div class="step-heading"><span>03</span><h3>Simulate</h3></div><img src="assets/physics.jpg" alt="Robot and task objects assembled in MuJoCo" loading="lazy"><p>Register the scene to the robot and combine object visual meshes with collision geometry.</p><span class="tech-label">OBJECT MESHES · MuJoCo</span></article>
+        <article><div class="step-heading"><span>04</span><h3>Evaluate</h3></div><img src="assets/observation.jpg" alt="Fused background and mesh render used as a policy observation" loading="lazy"><p>Render both calibrated wrist-camera views and execute policy actions in a closed simulation loop.</p><span class="tech-label">DUAL WRIST VIEWS · VLA</span></article>
+      </div>
+      <div class="loop-note"><span aria-hidden="true">↳</span> Policy observations → action chunks → simulated robot → new observations</div>
+    </div>
+  </section>
+
+  <section class="section container" id="benchmark" aria-labelledby="benchmark-title">
+    <div class="section-heading"><div><p class="eyebrow">THE BENCHMARK</p><h2 id="benchmark-title">Two platforms. Three scenes.</h2></div><p>Cup pick-and-place, tape placement,<br>and pen placement.</p></div>
+    <div class="scene-grid">
+      <figure><img src="assets/scene-duo.jpg" alt="Reconstructed Duo scene for the dual Franka FR3 platform" loading="lazy"><figcaption><h3>Duo</h3><span>Dual Franka FR3</span></figcaption></figure>
+      <figure><img src="assets/scene-flat.jpg" alt="Reconstructed Flat scene for the dual Franka FR3 platform" loading="lazy"><figcaption><h3>Flat</h3><span>Dual Franka FR3</span></figcaption></figure>
+      <figure><img src="assets/scene-g2.jpg" alt="Reconstructed G2 scene for the G2-compatible bimanual platform" loading="lazy"><figcaption><h3>G2</h3><span>G2-compatible platform</span></figcaption></figure>
+    </div>
+    <div class="benchmark-facts"><p><strong>2</strong> policies per task</p><p><strong>20</strong> real trials per policy</p><p><strong>80</strong> simulated trials per policy</p><p><strong>2</strong> fisheye wrist cameras</p></div>
+  </section>
+
+  <section class="results-band" id="results" aria-labelledby="results-title">
+    <div class="section container">
+      <div class="section-heading"><div><p class="eyebrow">INITIAL RESULTS</p><h2 id="results-title">Does simulation recover<br>the real policy ranking?</h2></div><div class="headline-metric"><strong>88.9<span>%</span></strong><p>8 of 9 observed scene–task pairs</p></div></div>
+      <p class="results-intro">The two policies have the same observed ordering in eight comparisons. Flat / Cup is the single reversal. This measures pairwise ranking agreement, not agreement in absolute success rates.</p>
+      <div class="results-controls"><div class="scene-buttons" role="group" aria-label="Filter results by scene"><button type="button" data-scene="all" aria-pressed="true">All scenes</button><button type="button" data-scene="Duo" aria-pressed="false">Duo · 3/3</button><button type="button" data-scene="Flat" aria-pressed="false">Flat · 2/3</button><button type="button" data-scene="G2" aria-pressed="false">G2 · 3/3</button></div><span class="table-hint">Successes / trials · π₁ → π₂</span></div>
+      <p id="filter-status" class="sr-only" aria-live="polite">Showing all nine comparisons.</p>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Policy success counts by scene and task">
+        <table><caption class="sr-only">Observed real and simulated success counts for two policies in each scene and task</caption><thead><tr><th scope="col">Scene</th><th scope="col">Task</th><th scope="col">Real <span>π₁ / π₂</span></th><th scope="col">Simulation <span>π₁ / π₂</span></th><th scope="col">Ranking</th></tr></thead><tbody>
+          <tr data-scene="Duo"><th scope="row">Duo</th><td>Cup</td><td>18/20 <span class="pair-divider">→</span> 19/20</td><td>21/80 <span class="pair-divider">→</span> 78/80</td><td><span class="agreement">Agrees</span></td></tr>
+          <tr data-scene="Duo"><th scope="row">Duo</th><td>Tape</td><td>14/20 <span class="pair-divider">→</span> 6/20</td><td>20/80 <span class="pair-divider">→</span> 2/80</td><td><span class="agreement">Agrees</span></td></tr>
+          <tr data-scene="Duo"><th scope="row">Duo</th><td>Pen</td><td>17/20 <span class="pair-divider">→</span> 6/20</td><td>25/80 <span class="pair-divider">→</span> 1/80</td><td><span class="agreement">Agrees</span></td></tr>
+          <tr data-scene="Flat"><th scope="row">Flat</th><td>Cup</td><td>8/20 <span class="pair-divider">→</span> 7/20</td><td>30/80 <span class="pair-divider">→</span> 59/80</td><td><span class="reversal">Reversed</span></td></tr>
+          <tr data-scene="Flat"><th scope="row">Flat</th><td>Tape</td><td>19/20 <span class="pair-divider">→</span> 1/20</td><td>50/80 <span class="pair-divider">→</span> 14/80</td><td><span class="agreement">Agrees</span></td></tr>
+          <tr data-scene="Flat"><th scope="row">Flat</th><td>Pen</td><td>4/20 <span class="pair-divider">→</span> 0/20</td><td>12/80 <span class="pair-divider">→</span> 0/80</td><td><span class="agreement">Agrees</span></td></tr>
+          <tr data-scene="G2"><th scope="row">G2</th><td>Cup</td><td>8/20 <span class="pair-divider">→</span> 16/20</td><td>18/80 <span class="pair-divider">→</span> 47/80</td><td><span class="agreement">Agrees</span></td></tr>
+          <tr data-scene="G2"><th scope="row">G2</th><td>Tape</td><td>20/20 <span class="pair-divider">→</span> 16/20</td><td>15/80 <span class="pair-divider">→</span> 14/80</td><td><span class="agreement">Agrees</span></td></tr>
+          <tr data-scene="G2"><th scope="row">G2</th><td>Pen</td><td>19/20 <span class="pair-divider">→</span> 7/20</td><td>48/80 <span class="pair-divider">→</span> 0/80</td><td><span class="agreement">Agrees</span></td></tr>
+        </tbody></table>
+      </div>
+      <p class="data-note">π₁: box80k. π₂: cup1trim for Cup; tateno80k for Tape and Pen. Counts: September 16, 2026 research snapshot. <a href="assets/results.json" download>Download data ↗</a></p>
+      <details class="scope-note"><summary>How to interpret these preliminary results</summary><div><p>These are exploratory point-estimate rankings on selected measurements, not a held-out validation estimate. Some differences are only one successful trial. Tray has tied zero real successes and is excluded; unreported tasks are not counted.</p><p>The source notes historical eligibility exclusions for Duo and G2 Tape and an execution caveat for Duo Pen. Excluding those three comparisons leaves 5/6 agreement (83.3%). The nine-pair summary does not override these caveats or establish statistically resolved policy ordering.</p><p>The downloadable September 16 count ledger is used consistently here, including Flat Cup simulation counts of 30/80 and 59/80; an earlier manuscript snapshot reports different counts.</p></div></details>
+    </div>
+  </section>
+
+  <section class="section container" aria-labelledby="quality-title">
+    <div class="section-heading"><div><p class="eyebrow">BEYOND VISUAL REALISM</p><h2 id="quality-title">What happens when the scene breaks?</h2></div><p>Controlled reconstruction changes<br>under the same simulation setup.</p></div>
+    <div class="artifact-grid">
+      <article><img src="assets/artifact-hole.jpg" alt="Example reconstructed scene with a ceiling hole" loading="lazy"><div><span class="artifact-index">01 / MISSING GEOMETRY</span><h3>Holes</h3><p>Remove parts of the reconstruction that can enter a wide-angle wrist-camera view.</p></div></article>
+      <article><img src="assets/artifact-floater.jpg" alt="Example reconstructed scene with floating artifacts" loading="lazy"><div><span class="artifact-index">02 / SPURIOUS GEOMETRY</span><h3>Floaters</h3><p>Introduce floating artifacts that alter the appearance of the workspace.</p></div></article>
+      <article><img src="assets/artifact-warping.jpg" alt="Example reconstructed G2 workspace with a warped table surface" loading="lazy"><div><span class="artifact-index">03 / DISTORTED GEOMETRY</span><h3>Warping</h3><p>Distort the reconstructed surface while retaining the underlying physical setup.</p></div></article>
+    </div>
+    <div class="quality-question"><span class="eyebrow">SCENE VERIFICATION</span><h3>Can image quality tell us which simulations to trust?</h3><p>We investigate NVS-SQA and CrossScore as candidate indicators of unreliable policy evaluation, alongside capture-coverage disturbances. The verification study is ongoing; the examples above illustrate artifact conditions and do not report measured ranking reversals.</p></div>
+  </section>
+
+  <section class="resources container" id="resources" aria-labelledby="resources-title"><div><p class="eyebrow">FOLLOW THE PROJECT</p><h2 id="resources-title">Building toward reproducible<br>real-to-sim evaluation.</h2><p>The public repository is in early development. A runnable pipeline,<br class="desktop-break"> evaluation code, and release documentation are planned.</p></div><a class="button primary" href="https://github.com/Hirotin/YUBI-Real2Sim">View on GitHub <span aria-hidden="true">↗</span></a></section>
+</main>
+<footer class="container footer"><a class="wordmark" href="#">YUBI<span>—</span>Real2Sim</a><p>Research in progress · September 2026</p><a href="https://github.com/Hirotin/hiroki.github.io">Website source ↗</a></footer>
+</body>
+</html>
