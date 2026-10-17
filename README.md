@@ -3,9 +3,9 @@
 Static research project page for **YUBI-Real2Sim: 3DGS Scene Verification for Reliable Policy Evaluation**.
 
 Published with GitHub Pages from the root of `main`:
-https://hirotin.github.io/hiroki.github.io/
+https://hirotin.github.io/YUBI-Real2Sim.github.io/
 
-The repository name differs from the account name, so this is a project site under `/hiroki.github.io/`.
+The repository name differs from the account name, so this is a project site under `/YUBI-Real2Sim.github.io/`.
 
 ## Preview
 
