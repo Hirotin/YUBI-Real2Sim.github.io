@@ -60,13 +60,13 @@
   </section>
 
   <section class="section container" id="benchmark" aria-labelledby="benchmark-title">
-    <div class="section-heading"><div><p class="eyebrow">THE BENCHMARK</p><h2 id="benchmark-title">Two platforms. Three scenes.</h2></div><p>Cup pick-and-place, tape placement,<br>and pen placement.</p></div>
+    <div class="section-heading"><div><p class="eyebrow">THE BENCHMARK</p><h2 id="benchmark-title">Three scenes. Three tasks.</h2></div><p>Cup pick-and-place, tape placement,<br>and pen placement.</p></div>
     <div class="scene-grid">
       <figure><img src="assets/scene-duo.jpg" alt="Reconstructed Duo scene for the dual Franka FR3 platform" loading="lazy"><figcaption><h3>Duo</h3><span>Dual Franka FR3</span></figcaption></figure>
       <figure><img src="assets/scene-flat.jpg" alt="Reconstructed Flat scene for the dual Franka FR3 platform" loading="lazy"><figcaption><h3>Flat</h3><span>Dual Franka FR3</span></figcaption></figure>
       <figure><img src="assets/scene-g2.jpg" alt="Reconstructed G2 scene for the G2-compatible bimanual platform" loading="lazy"><figcaption><h3>G2</h3><span>G2-compatible platform</span></figcaption></figure>
     </div>
-    <div class="benchmark-facts"><p><strong>2</strong> policies per task</p><p><strong>20</strong> real trials per policy</p><p><strong>80</strong> simulated trials per policy</p><p><strong>2</strong> fisheye wrist cameras</p></div>
+    <div class="benchmark-facts"><p><strong>2</strong> policies per task</p><p><strong>20</strong> real trials per policy</p><p><strong>80</strong> simulated trials per policy</p></div>
   </section>
 
   <section class="results-band" id="results" aria-labelledby="results-title">
@@ -100,7 +100,24 @@
       <article><img src="assets/artifact-floater.jpg" alt="Example reconstructed scene with floating artifacts" loading="lazy"><div><span class="artifact-index">02 / SPURIOUS GEOMETRY</span><h3>Floaters</h3><p>Introduce floating artifacts that alter the appearance of the workspace.</p></div></article>
       <article><img src="assets/artifact-warping.jpg" alt="Example reconstructed G2 workspace with a warped table surface" loading="lazy"><div><span class="artifact-index">03 / DISTORTED GEOMETRY</span><h3>Warping</h3><p>Distort the reconstructed surface while retaining the underlying physical setup.</p></div></article>
     </div>
-    <div class="quality-question"><span class="eyebrow">SCENE VERIFICATION</span><h3>Can image quality tell us which simulations to trust?</h3><p>We investigate NVS-SQA and CrossScore as candidate indicators of unreliable policy evaluation, alongside capture-coverage disturbances. The verification study is ongoing; the examples above illustrate artifact conditions and do not report measured ranking reversals.</p></div>
+    <div class="quality-question" id="verification">
+      <span class="eyebrow">3DGS SCENE VERIFICATION · NVS-SQA RESULTS</span>
+      <h3>Can image quality tell us which simulations to trust?</h3>
+      <p><strong>NVS-SQA alone did not reliably identify policy-ranking failures in this study.</strong> Under reduced capture coverage, held-out Test scores changed by at most 0.060, compared with a 0.224 range across the three Clean scenes. G2’s contiguous and random 30% frame-removal variants reversed policy rankings while changing the score by only −0.018 and −0.039, respectively.</p>
+      <p>We fit quality thresholds on two scenes and evaluate on the held-out third, keeping all variants of each scene together. Across 15 matched scene–variant conditions and three tasks (Cup, Tape, Pen), NVS-SQA correctly classified ranking reliability in 30/45 task-level decisions on Test views and 29/45 on policy-observation (OBS) views.</p>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="NVS-SQA scene verification results">
+        <table>
+          <caption class="sr-only">Correct ranking-reliability classifications using NVS-SQA, with each scene held out in turn</caption>
+          <thead><tr><th scope="col">NVS-SQA views</th><th scope="col">Cup</th><th scope="col">Tape</th><th scope="col">Pen</th><th scope="col">Total</th><th scope="col">All-three</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Test</th><td>7/15</td><td>8/15</td><td>15/15</td><td>30/45 (66.7%)</td><td>13/15</td></tr>
+            <tr><th scope="row">OBS</th><td>12/15</td><td>2/15</td><td>15/15</td><td>29/45 (64.4%)</td><td>7/15</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="verification-note">Entries count correct classifications, not successful robot trials. “All-three” is a separately fitted binary target: whether all three task rankings agree with real evaluation. It is not a combination of the task-level predictions. Pen’s 15/15 reflects constant predictions on all-reliable labels, not demonstrated failure detection.</p>
+      <p>For context, always predicting “reliable” achieves 35/45 (77.8%) task-level accuracy without a quality score. NVS-SQA misses all three Tape ranking failures. Test-view NVS-SQA performs better on the separate All-three target (13/15, versus 6/15 for always reliable and 9/15 for always unreliable), but these three-scene results do not establish a general scene-acceptance rule.</p>
+    </div>
   </section>
 
   <section class="resources container" id="resources" aria-labelledby="resources-title"><div><p class="eyebrow">FOLLOW THE PROJECT</p><h2 id="resources-title">Building toward reproducible<br>real-to-sim evaluation.</h2><p>The public repository is in early development. A runnable pipeline,<br class="desktop-break"> evaluation code, and release documentation are planned.</p></div><a class="button primary" href="https://github.com/Hirotin/YUBI-Real2Sim">View on GitHub <span aria-hidden="true">↗</span></a></section>

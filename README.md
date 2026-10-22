@@ -26,3 +26,7 @@ The table uses `docs/experiments/ranking/plot_data.json` (supplied fixed-80 resu
 The public project README identifies the code as early development without a runnable pipeline. Do not claim code, a paper, or datasets have been released until working public destinations are available.
 
 When results change, update the JSON, HTML table, headline, scene buttons, scope notes, and date together. Keep counts and denominators explicit. Scientific images are copied from the project without generative modification.
+
+## Scene verification summary
+
+The NVS-SQA section was updated on October 22, 2026 using the local research repository's `SUPPLEMENTARY.md`, Section 4.1 (Clean scores and coverage deltas) and Section 6.1 (classification counts), checked against the manuscript's scene-verification analysis. Only NVS-SQA metric results are included. Test and OBS counts are correct reliability classifications, not rollout success counts. The All-three target is fitted separately; the constant-prediction baselines provide context for both targets. These results cover three scenes and do not establish a general acceptance rule. The September 16 policy-ranking ledger remains a separate snapshot.
