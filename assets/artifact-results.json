@@ -1,0 +1,133 @@
+{
+  "source": "Manuscript final_20260917/computed/aggregate_results.csv and pair_results.csv",
+  "snapshot": "2026-09-17",
+  "status": "Provisional intended-label aggregate; includes unresolved execution and provenance flags. Historical selected Clean references are not matched controls.",
+  "definitions": {
+    "n_pairs": "Three scenes × three tasks (Cup, Tape, Pen); 80 trials per policy per condition.",
+    "sig_lost": "Two-sided Fisher p < 0.05 in Clean, p >= 0.05 in artifact condition; unadjusted.",
+    "sig_gained": "Two-sided Fisher p >= 0.05 in Clean, p < 0.05 in artifact condition; unadjusted.",
+    "ranking_reversed": "Strict point-estimate reversal relative to selected Clean.",
+    "tie": "Equal policy success rates in artifact condition; separate from strict reversal.",
+    "correct": "Point-estimate ranking agrees with real-world ranking.",
+    "n_pairs_with_invalid_reason": "Comparisons carrying unresolved source audit flags; retained in this intended-label snapshot."
+  },
+  "rows": [
+    {
+      "label": "Holes · 54°",
+      "variant": "hole_54",
+      "n_pairs": 9,
+      "sig_lost": 1,
+      "sig_gained": 1,
+      "sig_unchanged": 7,
+      "ranking_reversed": 1,
+      "tie": 0,
+      "correct": 7,
+      "selected_clean_correct": 8,
+      "n_pairs_with_invalid_reason": 2
+    },
+    {
+      "label": "Holes · 90°",
+      "variant": "hole_90",
+      "n_pairs": 9,
+      "sig_lost": 4,
+      "sig_gained": 0,
+      "sig_unchanged": 5,
+      "ranking_reversed": 1,
+      "tie": 0,
+      "correct": 7,
+      "selected_clean_correct": 8,
+      "n_pairs_with_invalid_reason": 5
+    },
+    {
+      "label": "Floaters · low (8)",
+      "variant": "float_low8",
+      "n_pairs": 9,
+      "sig_lost": 1,
+      "sig_gained": 0,
+      "sig_unchanged": 8,
+      "ranking_reversed": 0,
+      "tie": 1,
+      "correct": 7,
+      "selected_clean_correct": 8,
+      "n_pairs_with_invalid_reason": 5
+    },
+    {
+      "label": "Floaters · mid (8)",
+      "variant": "float_mid8",
+      "n_pairs": 9,
+      "sig_lost": 1,
+      "sig_gained": 1,
+      "sig_unchanged": 7,
+      "ranking_reversed": 1,
+      "tie": 0,
+      "correct": 7,
+      "selected_clean_correct": 8,
+      "n_pairs_with_invalid_reason": 5
+    },
+    {
+      "label": "Floaters · high (8)",
+      "variant": "float_high8",
+      "n_pairs": 9,
+      "sig_lost": 1,
+      "sig_gained": 0,
+      "sig_unchanged": 8,
+      "ranking_reversed": 1,
+      "tie": 0,
+      "correct": 7,
+      "selected_clean_correct": 8,
+      "n_pairs_with_invalid_reason": 5
+    },
+    {
+      "label": "Warping",
+      "variant": "tablegeo_s1",
+      "n_pairs": 9,
+      "sig_lost": 2,
+      "sig_gained": 1,
+      "sig_unchanged": 6,
+      "ranking_reversed": 0,
+      "tie": 0,
+      "correct": 8,
+      "selected_clean_correct": 8,
+      "n_pairs_with_invalid_reason": 5
+    },
+    {
+      "label": "Central pinhole",
+      "variant": "fov_center",
+      "n_pairs": 9,
+      "sig_lost": 5,
+      "sig_gained": 0,
+      "sig_unchanged": 4,
+      "ranking_reversed": 0,
+      "tie": 0,
+      "correct": 8,
+      "selected_clean_correct": 8,
+      "n_pairs_with_invalid_reason": 9
+    },
+    {
+      "label": "Adjacent removal · 30%",
+      "variant": "pinhole_adjacent_remove_30",
+      "n_pairs": 9,
+      "sig_lost": 3,
+      "sig_gained": 0,
+      "sig_unchanged": 6,
+      "ranking_reversed": 1,
+      "tie": 0,
+      "correct": 7,
+      "selected_clean_correct": 8,
+      "n_pairs_with_invalid_reason": 9
+    },
+    {
+      "label": "Random removal · 30%",
+      "variant": "pinhole_random_remove_30",
+      "n_pairs": 9,
+      "sig_lost": 3,
+      "sig_gained": 0,
+      "sig_unchanged": 6,
+      "ranking_reversed": 2,
+      "tie": 0,
+      "correct": 6,
+      "selected_clean_correct": 8,
+      "n_pairs_with_invalid_reason": 9
+    }
+  ]
+}

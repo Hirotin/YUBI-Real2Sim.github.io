@@ -100,6 +100,31 @@
       <article><img src="assets/artifact-floater.jpg" alt="Example reconstructed scene with floating artifacts" loading="lazy"><div><span class="artifact-index">02 / SPURIOUS GEOMETRY</span><h3>Floaters</h3><p>Introduce floating artifacts that alter the appearance of the workspace.</p></div></article>
       <article><img src="assets/artifact-warping.jpg" alt="Example reconstructed G2 workspace with a warped table surface" loading="lazy"><div><span class="artifact-index">03 / DISTORTED GEOMETRY</span><h3>Warping</h3><p>Distort the reconstructed surface while retaining the underlying physical setup.</p></div></article>
     </div>
+    <div class="artifact-results" id="artifact-results">
+      <h3>How often do the conclusions change?</h3>
+      <p class="results-intro">Holes and floaters reduce agreement with real-world rankings from 8/9 to 7/9. Warping retains the Clean ordering, although significance changes in three comparisons. Random 30% capture removal produces two reversals and the lowest agreement, 6/9.</p>
+      <p class="data-note">Each row: 9 policy comparisons across three scenes and three tasks, including Pen; 80 trials per policy. Changes are relative to the selected Clean reference.</p>
+      <div class="table-scroll" role="region" aria-label="Artifact significance and ranking changes" tabindex="0">
+        <table>
+          <caption class="sr-only">Provisional artifact results: significance changes, strict ranking reversals, ties, and agreement with real-world rankings. Counts out of nine per row.</caption>
+          <thead><tr><th scope="col">Artifact / condition</th><th scope="col">Significance changed</th><th scope="col">Ranking reversed</th><th scope="col">Tied</th><th scope="col">Real-world agreement</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Holes · 54°</th><td>2 <span class="artifact-breakdown">(1 lost / 1 gained)</span></td><td>1</td><td>0</td><td>7/9</td></tr>
+            <tr><th scope="row">Holes · 90°</th><td>4 <span class="artifact-breakdown">(4 lost / 0 gained)</span></td><td>1</td><td>0</td><td>7/9</td></tr>
+            <tr><th scope="row">Floaters · low (8)</th><td>1 <span class="artifact-breakdown">(1 lost / 0 gained)</span></td><td>0</td><td>1</td><td>7/9</td></tr>
+            <tr><th scope="row">Floaters · mid (8)</th><td>2 <span class="artifact-breakdown">(1 lost / 1 gained)</span></td><td>1</td><td>0</td><td>7/9</td></tr>
+            <tr><th scope="row">Floaters · high (8)</th><td>1 <span class="artifact-breakdown">(1 lost / 0 gained)</span></td><td>1</td><td>0</td><td>7/9</td></tr>
+            <tr><th scope="row">Warping</th><td>3 <span class="artifact-breakdown">(2 lost / 1 gained)</span></td><td>0</td><td>0</td><td>8/9</td></tr>
+            <tr><th scope="row">Central pinhole</th><td>5 <span class="artifact-breakdown">(5 lost / 0 gained)</span></td><td>0</td><td>0</td><td>8/9</td></tr>
+            <tr><th scope="row">Adjacent removal · 30%</th><td>3 <span class="artifact-breakdown">(3 lost / 0 gained)</span></td><td>1</td><td>0</td><td>7/9</td></tr>
+            <tr><th scope="row">Random removal · 30%</th><td>3 <span class="artifact-breakdown">(3 lost / 0 gained)</span></td><td>2</td><td>0</td><td>6/9</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="data-note">Significance: two-sided Fisher’s exact test, unadjusted p &lt; 0.05. “Changed” counts crossings of this threshold; it does not test whether the policy-performance gap itself changed significantly. Reversals are strict changes of ordering; ties are counted separately.</p>
+      <p class="data-note"><strong>Provisional September 17 snapshot.</strong> Intended condition labels include unresolved execution/provenance flags; historical Clean references are not matched controls. <a href="assets/artifact-results.json" download>Download counts and definitions ↗</a></p>
+      <details class="scope-note"><summary>Source and interpretation</summary><div><p>This is the manuscript’s intended-label aggregate, not the restricted execution-audited subset. Source flags remain on 2/9 comparisons for Hole 54°, 5/9 for Hole 90°, each floater condition and Warping, and 9/9 for each capture-coverage condition. They include wrong-scene executions, pending re-audits, and unverified reference matching; the downloadable data retains these counts.</p><p>Each severity is a separate condition, so rows reuse scene–task pairs and should not be summed as independent cases. Real-world agreement compares point-estimate rankings, with ties treated as non-agreement; it does not imply statistically resolved ordering.</p></div></details>
+    </div>
     <div class="quality-question" id="verification">
       <span class="eyebrow">3DGS SCENE VERIFICATION · IMAGE-QUALITY RESULTS</span>
       <h3>Can image quality tell us which simulations to trust?</h3>

@@ -52,3 +52,7 @@ The verification table now includes PSNR, SSIM, LPIPS, NVS-SQA/Test, original NV
 For this ablation, paired housing-present/absent renders define the affected-pixel mask. Corrected RGB is inserted only there, preserving every other archived pixel. This controls for small historical foreground-render drift in seven conditions; eight controls reproduce the archive exactly. All 950 backgrounds and camera poses match. Local evidence: `/Users/hiroki-airoa/Documents/Codex/2026-10-22/nvssqa-all-scenes/analysis.json`; remote evidence: `abciq:/groups/qgah50055/qch10159hn/cf_eval_final/outputs/nvssqa_housing_all15_20261022/`. The full-view illustrations above the table remain distinct from the 518×518 scoring inputs.
 
 The public comparison omits the original OBS row and labels the housing-corrected row simply `NVS-SQA / OBS`. The housing-removal protocol remains documented below the table and in the downloadable JSON.
+
+## Artifact transition summary
+
+The artifact table uses the ordinary / All rows of the manuscript’s `docs/experiments/final_20260917/computed/aggregate_results.csv`. All nine conditions are shown separately, each with nine comparisons including Pen. Counts were checked against `pair_results.csv`, including significance-threshold crossings and strict rank reversals. `assets/artifact-results.json` preserves the counts, definitions, and audit-flag totals. This is the provisional intended-label snapshot with historical nonmatched Clean references, not the restricted execution-audited subset. Public notes explicitly retain that distinction.
