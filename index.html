@@ -27,7 +27,7 @@
   <section class="hero container" aria-labelledby="project-title">
     <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> ROBOT LEARNING · REAL-TO-SIMULATION</p>
     <h1 id="project-title">YUBI-Real2Sim</h1>
-    <p class="hero-title">3DGS Scene Verification<br>for Reliable Policy Evaluation</p>
+    <p class="hero-title">3DGS Scene Verification for Reliable Policy Evaluation</p>
     <p class="hero-description">When can a reconstructed world be trusted to evaluate a robot?<br class="desktop-break"> Connecting real scenes, fisheye vision, and policy performance.</p>
     <p class="authors">Hiroki Nishizawa<sup>1,2</sup> <span>Takehiko Ohkawa<sup>1</sup></span> <span>Nicola Scianca<sup>1</sup></span><br class="desktop-break"> Tatsuya Matsushima<sup>1</sup> <span>Shigeo Morishima<sup>2</sup></span> <span>Kei Ota<sup>1</sup></span></p>
     <p class="affiliations"><sup>1</sup> AIRoA <span><sup>2</sup> Waseda University</span></p>
@@ -103,6 +103,12 @@
     <div class="quality-question" id="verification">
       <span class="eyebrow">3DGS SCENE VERIFICATION · NVS-SQA RESULTS</span>
       <h3>Can image quality tell us which simulations to trust?</h3>
+      <div class="verification-views">
+        <figure><a href="assets/verification-test-flat-hole54.png"><img src="assets/verification-test-flat-hole54.png" alt="Held-out Test camera rendering of Flat with a 54-degree ceiling hole, showing a tilted capture viewpoint" loading="lazy" width="1600" height="1600"></a><figcaption><strong>Test · held-out capture view</strong><span>3DGS-only rendering from a held-out camera pose. The camera roll follows the capture viewpoint.</span></figcaption></figure>
+        <figure><a href="assets/verification-obs-flat-hole54-right.png"><img src="assets/verification-obs-flat-hole54-right.png" alt="Right wrist-camera OBS evaluation image of Flat with a plate and cup at the initial rollout state" loading="lazy" width="518" height="518"></a><figcaption><strong>OBS · right wrist view</strong><span>Saved rollout camera pose, with MuJoCo foreground composited over the 3DGS background.</span></figcaption></figure>
+        <figure><a href="assets/verification-obs-flat-hole54-left.png"><img src="assets/verification-obs-flat-hole54-left.png" alt="Left wrist-camera OBS evaluation image of Flat at the same initial rollout state" loading="lazy" width="518" height="518"></a><figcaption><strong>OBS · left wrist view</strong><span>The paired left view from the same state, used together with the right view for NVS-SQA.</span></figcaption></figure>
+      </div>
+      <p class="verification-note">Example evaluation views from Flat / Hole 54°: Test image 60 and OBS frame 0. Test samples capture viewpoints; OBS samples recorded policy-observation poses. These are different viewpoints, not aligned image pairs. Click an image to inspect the original.</p>
       <p><strong>NVS-SQA alone did not reliably identify policy-ranking failures in this study.</strong> Under reduced capture coverage, held-out Test scores changed by at most 0.060, compared with a 0.224 range across the three Clean scenes. G2’s contiguous and random 30% frame-removal variants reversed policy rankings while changing the score by only −0.018 and −0.039, respectively.</p>
       <p>We fit quality thresholds on two scenes and evaluate on the held-out third, keeping all variants of each scene together. Across 15 matched scene–variant conditions and three tasks (Cup, Tape, Pen), NVS-SQA correctly classified ranking reliability in 30/45 task-level decisions on Test views and 29/45 on policy-observation (OBS) views.</p>
       <div class="table-scroll" tabindex="0" role="region" aria-label="NVS-SQA scene verification results">
