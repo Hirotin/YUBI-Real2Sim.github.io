@@ -1,0 +1,128 @@
+{
+  "updated": "2026-10-22",
+  "scenes": [
+    "Duo",
+    "Flat",
+    "G2"
+  ],
+  "conditions": [
+    "CentralPinhole",
+    "Contiguous30",
+    "Random30",
+    "Hole54",
+    "Hole90"
+  ],
+  "tasks": [
+    "Cup",
+    "Tape",
+    "Pen"
+  ],
+  "decisions_per_task": 15,
+  "total_task_decisions": 45,
+  "protocol": "Leave one scene out; fit task-specific thresholds on the other two scenes to maximize balanced accuracy, then sensitivity, then smallest oriented threshold; single-class training uses constant predictions. All-three is fitted separately.",
+  "rows": [
+    {
+      "method": "PSNR / Test",
+      "correct_by_task": {
+        "Cup": 8,
+        "Tape": 8,
+        "Pen": 15
+      },
+      "total_correct": 31,
+      "total_decisions": 45,
+      "all_three_correct": 9,
+      "all_three_decisions": 15
+    },
+    {
+      "method": "SSIM / Test",
+      "correct_by_task": {
+        "Cup": 8,
+        "Tape": 9,
+        "Pen": 15
+      },
+      "total_correct": 32,
+      "total_decisions": 45,
+      "all_three_correct": 7,
+      "all_three_decisions": 15
+    },
+    {
+      "method": "LPIPS / Test",
+      "correct_by_task": {
+        "Cup": 8,
+        "Tape": 5,
+        "Pen": 15
+      },
+      "total_correct": 28,
+      "total_decisions": 45,
+      "all_three_correct": 10,
+      "all_three_decisions": 15
+    },
+    {
+      "method": "NVS-SQA / Test",
+      "correct_by_task": {
+        "Cup": 7,
+        "Tape": 8,
+        "Pen": 15
+      },
+      "total_correct": 30,
+      "total_decisions": 45,
+      "all_three_correct": 13,
+      "all_three_decisions": 15
+    },
+    {
+      "method": "NVS-SQA / OBS \u00b7 original",
+      "correct_by_task": {
+        "Cup": 12,
+        "Tape": 2,
+        "Pen": 15
+      },
+      "total_correct": 29,
+      "total_decisions": 45,
+      "all_three_correct": 7,
+      "all_three_decisions": 15
+    },
+    {
+      "method": "NVS-SQA / OBS \u00b7 housing removed",
+      "correct_by_task": {
+        "Cup": 13,
+        "Tape": 4,
+        "Pen": 15
+      },
+      "total_correct": 32,
+      "total_decisions": 45,
+      "all_three_correct": 4,
+      "all_three_decisions": 15
+    },
+    {
+      "method": "Always reliable",
+      "correct_by_task": {
+        "Cup": 8,
+        "Tape": 12,
+        "Pen": 15
+      },
+      "total_correct": 35,
+      "total_decisions": 45,
+      "all_three_correct": 6,
+      "all_three_decisions": 15
+    }
+  ],
+  "housing_removal": {
+    "images": 950,
+    "resolution": [
+      518,
+      518
+    ],
+    "fovy_degrees": 90,
+    "frames_per_condition": {
+      "Flat": 19,
+      "Duo": 38,
+      "G2": 38
+    },
+    "method": "Use housing-present and housing-excluded paired renders to identify affected pixels. Replace only those pixels in archived inputs; preserve all other original pixels exactly.",
+    "camera_poses_unchanged": true,
+    "backgrounds_unchanged": true,
+    "model_unchanged": true,
+    "test_scores_unchanged": true
+  },
+  "interpretation": "Pen has no ranking-disagreement labels and its perfect accuracy reflects constant predictions, not failure detection."
+}
