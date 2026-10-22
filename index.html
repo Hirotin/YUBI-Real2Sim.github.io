@@ -14,8 +14,8 @@
   <meta property="og:image" content="https://hirotin.github.io/YUBI-Real2Sim.github.io/assets/og.png">
   <meta property="og:image:alt" content="YUBI-Real2Sim: 3DGS Scene Verification for Reliable Policy Evaluation">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" href="styles.css?v=20261022-artifact-gallery">
-  <script src="script.js?v=20261022-artifact-gallery" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261022-artifact-orbits">
+  <script src="script.js?v=20261022-artifact-orbits" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -164,11 +164,11 @@
   <div class="viewer-scenes" role="group" aria-label="Choose scene"><button data-gallery-scene="Duo" aria-pressed="true">Duo</button><button data-gallery-scene="Flat" aria-pressed="false">Flat</button><button data-gallery-scene="G2" aria-pressed="false">G2</button></div>
   <p class="viewer-status" aria-live="polite"></p>
   <div class="viewer-images">
-    <figure><a target="_blank" rel="noopener"><img class="viewer-test" alt="" width="518" height="518"></a><figcaption>Scene rendering · held-out Test view</figcaption></figure>
+    <figure><video id="artifact-orbit" controls muted loop playsinline preload="metadata" width="960" height="720" aria-label="Scene orbit video"></video><figcaption>Scene rendering · 360° orbit</figcaption></figure>
     <figure><a target="_blank" rel="noopener"><img alt="" width="719" height="539"></a><figcaption>YUBI OBS · right wrist</figcaption></figure>
     <figure><a target="_blank" rel="noopener"><img alt="" width="719" height="539"></a><figcaption>YUBI OBS · left wrist</figcaption></figure>
   </div>
-  <p class="viewer-note">Test view 60 is shown rotated 180°. OBS shows the initial recorded state, with the camera housing excluded and the full native image preserved. These are different viewpoints; OBS illustrations are before policy resizing and contrast adjustment. Click an image for full resolution.</p>
+  <p class="viewer-note">The orbit shows the reconstruction from a moving camera. OBS shows the initial recorded state, with the camera housing excluded and the full native image preserved, before policy resizing and contrast adjustment. Orbit and OBS use different viewpoints and may show different task setups. Click an OBS image for full resolution.</p>
 </dialog>
 </body>
 </html>

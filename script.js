@@ -20,10 +20,16 @@ function updateArtifactViewer() {
   document.getElementById('artifact-viewer-title').textContent = galleryLabel;
   artifactViewer.querySelector('.viewer-status').textContent = `${galleryScene} / ${galleryLabel}`;
   gallerySceneButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.galleryScene === galleryScene)));
-  const views = ['test', 'right', 'left'];
+  const video = document.getElementById('artifact-orbit');
+  video.pause();
+  video.src = `assets/artifact-orbits/${galleryScene}_${galleryArtifact}.mp4`;
+  video.setAttribute('aria-label', `${galleryScene}, ${galleryLabel}: 360-degree scene orbit`);
+  video.load();
+  if (artifactViewer.open) playArtifactOrbit();
+  const views = ['right', 'left'];
   artifactViewer.querySelectorAll('.viewer-images img').forEach((img, index) => {
     const path = `assets/artifact-gallery/${galleryScene}_${galleryArtifact}_${views[index]}.png`;
-    img.alt = `${galleryScene}, ${galleryLabel}: ${index === 0 ? 'held-out scene rendering' : views[index] + ' YUBI wrist observation'}`;
+    img.alt = `${galleryScene}, ${galleryLabel}: ${views[index]} YUBI wrist observation`;
     img.src = path;
     img.parentElement.href = path;
   });
@@ -35,6 +41,7 @@ document.querySelectorAll('[data-artifact]').forEach(button => {
     galleryLabel = tableButton.textContent.replace('↗', '').trim();
     updateArtifactViewer();
     artifactViewer.showModal();
+    playArtifactOrbit();
   });
 });
 gallerySceneButtons.forEach(button => button.addEventListener('click', () => {
@@ -47,3 +54,10 @@ artifactViewer.addEventListener('click', event => {
   const rect = artifactViewer.getBoundingClientRect();
   if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) artifactViewer.close();
 });
+
+function playArtifactOrbit() {
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.getElementById('artifact-orbit').play().catch(() => {});
+  }
+}
+artifactViewer.addEventListener('close', () => document.getElementById('artifact-orbit').pause());
