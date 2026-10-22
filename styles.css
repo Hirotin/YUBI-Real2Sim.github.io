@@ -13,3 +13,5 @@
 .verification-views{max-width:780px;gap:24px;margin:22px auto 16px}.verification-views figure{min-width:0}.verification-views figure>a{display:block;max-width:220px;margin-inline:auto}.verification-views figcaption{font-size:11px;line-height:1.65}.verification-views figcaption strong{font-size:12px}@media(max-width:600px){.verification-views{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.verification-views figcaption{font-size:10px;overflow-wrap:anywhere}.verification-views figcaption strong{font-size:11px}}
 
 .verification-views img[src="assets/verification-test-flat-hole54.png"]{transform:rotate(180deg)}
+
+.verification-views img{aspect-ratio:auto;height:auto;background:transparent}
