@@ -17,3 +17,6 @@
 .verification-views img{aspect-ratio:auto;height:auto;background:transparent}
 
 .artifact-results{margin-top:36px}.artifact-results h3{font:normal 27px/1.3 var(--serif);margin:0 0 14px}.artifact-results .table-scroll{margin-top:20px}.artifact-results table{min-width:760px}.artifact-breakdown{display:block;font-size:11px;color:var(--muted);margin-top:4px}
+
+/* Use conventional, baseline-aligned numerals in the project titles. */
+h1,.hero-title{font-family:"Times New Roman",Times,serif;font-variant-numeric:lining-nums proportional-nums}
