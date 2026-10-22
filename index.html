@@ -14,8 +14,8 @@
   <meta property="og:image" content="https://hirotin.github.io/YUBI-Real2Sim.github.io/assets/og.png">
   <meta property="og:image:alt" content="YUBI-Real2Sim: 3DGS Scene Verification for Reliable Policy Evaluation">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" href="styles.css?v=20261022-title-numerals">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261022-artifact-gallery">
+  <script src="script.js?v=20261022-artifact-gallery" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -96,28 +96,28 @@
   <section class="section container" aria-labelledby="quality-title">
     <div class="section-heading"><div><p class="eyebrow">BEYOND VISUAL REALISM</p><h2 id="quality-title">What happens when the scene breaks?</h2></div><p>How the noisy scene breaks its policy ranking.</p></div>
     <div class="artifact-grid">
-      <article><img src="assets/artifact-hole.jpg" alt="Example reconstructed scene with a ceiling hole" loading="lazy"><div><span class="artifact-index">01 / MISSING GEOMETRY</span><h3>Holes</h3><p>Remove parts of the reconstruction that can enter a wide-angle wrist-camera view.</p></div></article>
-      <article><img src="assets/artifact-floater.jpg" alt="Example reconstructed scene with floating artifacts" loading="lazy"><div><span class="artifact-index">02 / SPURIOUS GEOMETRY</span><h3>Floaters</h3><p>Introduce floating artifacts that alter the appearance of the workspace.</p></div></article>
-      <article><img src="assets/artifact-warping.jpg" alt="Example reconstructed G2 workspace with a warped table surface" loading="lazy"><div><span class="artifact-index">03 / DISTORTED GEOMETRY</span><h3>Warping</h3><p>Distort the reconstructed surface while retaining the underlying physical setup.</p></div></article>
+      <article><img src="assets/artifact-hole.jpg" alt="Example reconstructed scene with a ceiling hole" loading="lazy"><div><span class="artifact-index">01 / MISSING GEOMETRY</span><h3><button class="artifact-link" data-artifact="hole_54" aria-haspopup="dialog">Holes <span aria-hidden="true">↗</span></button></h3><p>Remove parts of the reconstruction that can enter a wide-angle wrist-camera view.</p></div></article>
+      <article><img src="assets/artifact-floater.jpg" alt="Example reconstructed scene with floating artifacts" loading="lazy"><div><span class="artifact-index">02 / SPURIOUS GEOMETRY</span><h3><button class="artifact-link" data-artifact="float_mid8" aria-haspopup="dialog">Floaters <span aria-hidden="true">↗</span></button></h3><p>Introduce floating artifacts that alter the appearance of the workspace.</p></div></article>
+      <article><img src="assets/artifact-warping.jpg" alt="Example reconstructed G2 workspace with a warped table surface" loading="lazy"><div><span class="artifact-index">03 / DISTORTED GEOMETRY</span><h3><button class="artifact-link" data-artifact="tablegeo_s1" aria-haspopup="dialog">Warping <span aria-hidden="true">↗</span></button></h3><p>Distort the reconstructed surface while retaining the underlying physical setup.</p></div></article>
     </div>
     <div class="artifact-results" id="artifact-results">
       <h3>How often do the conclusions change?</h3>
       <p class="results-intro">Holes and floaters reduce agreement with real-world rankings from 8/9 to 7/9. Warping retains the Clean ordering, although significance changes in three comparisons. Random 30% capture removal produces two reversals and the lowest agreement, 6/9.</p>
-      <p class="data-note">Each row: 9 policy comparisons across three scenes and three tasks, including Pen; 80 trials per policy. Changes are relative to the selected Clean reference.</p>
+      <p class="data-note">Click a condition name to explore its scene rendering and YUBI observations. Each row: 9 policy comparisons across three scenes and three tasks, including Pen; 80 trials per policy. Changes are relative to the selected Clean reference.</p>
       <div class="table-scroll" role="region" aria-label="Artifact significance and ranking changes" tabindex="0">
         <table>
           <caption class="sr-only">Provisional artifact results: significance changes, strict ranking reversals, ties, and agreement with real-world rankings. Counts out of nine per row.</caption>
           <thead><tr><th scope="col">Artifact / condition</th><th scope="col">Significance changed</th><th scope="col">Ranking reversed</th><th scope="col">Tied</th><th scope="col">Real-world agreement</th></tr></thead>
           <tbody>
-            <tr><th scope="row">Holes · 54°</th><td>2 <span class="artifact-breakdown">(1 lost / 1 gained)</span></td><td>1</td><td>0</td><td>7/9</td></tr>
-            <tr><th scope="row">Holes · 90°</th><td>4 <span class="artifact-breakdown">(4 lost / 0 gained)</span></td><td>1</td><td>0</td><td>7/9</td></tr>
-            <tr><th scope="row">Floaters · low (8)</th><td>1 <span class="artifact-breakdown">(1 lost / 0 gained)</span></td><td>0</td><td>1</td><td>7/9</td></tr>
-            <tr><th scope="row">Floaters · mid (8)</th><td>2 <span class="artifact-breakdown">(1 lost / 1 gained)</span></td><td>1</td><td>0</td><td>7/9</td></tr>
-            <tr><th scope="row">Floaters · high (8)</th><td>1 <span class="artifact-breakdown">(1 lost / 0 gained)</span></td><td>1</td><td>0</td><td>7/9</td></tr>
-            <tr><th scope="row">Warping</th><td>3 <span class="artifact-breakdown">(2 lost / 1 gained)</span></td><td>0</td><td>0</td><td>8/9</td></tr>
-            <tr><th scope="row">Central pinhole</th><td>5 <span class="artifact-breakdown">(5 lost / 0 gained)</span></td><td>0</td><td>0</td><td>8/9</td></tr>
-            <tr><th scope="row">Adjacent removal · 30%</th><td>3 <span class="artifact-breakdown">(3 lost / 0 gained)</span></td><td>1</td><td>0</td><td>7/9</td></tr>
-            <tr><th scope="row">Random removal · 30%</th><td>3 <span class="artifact-breakdown">(3 lost / 0 gained)</span></td><td>2</td><td>0</td><td>6/9</td></tr>
+            <tr><th scope="row"><button class="artifact-link" data-artifact="hole_54" aria-haspopup="dialog">Holes · 54° <span aria-hidden="true">↗</span></button></th><td>2 <span class="artifact-breakdown">(1 lost / 1 gained)</span></td><td>1</td><td>0</td><td>7/9</td></tr>
+            <tr><th scope="row"><button class="artifact-link" data-artifact="hole_90" aria-haspopup="dialog">Holes · 90° <span aria-hidden="true">↗</span></button></th><td>4 <span class="artifact-breakdown">(4 lost / 0 gained)</span></td><td>1</td><td>0</td><td>7/9</td></tr>
+            <tr><th scope="row"><button class="artifact-link" data-artifact="float_low8" aria-haspopup="dialog">Floaters · low (8) <span aria-hidden="true">↗</span></button></th><td>1 <span class="artifact-breakdown">(1 lost / 0 gained)</span></td><td>0</td><td>1</td><td>7/9</td></tr>
+            <tr><th scope="row"><button class="artifact-link" data-artifact="float_mid8" aria-haspopup="dialog">Floaters · mid (8) <span aria-hidden="true">↗</span></button></th><td>2 <span class="artifact-breakdown">(1 lost / 1 gained)</span></td><td>1</td><td>0</td><td>7/9</td></tr>
+            <tr><th scope="row"><button class="artifact-link" data-artifact="float_high8" aria-haspopup="dialog">Floaters · high (8) <span aria-hidden="true">↗</span></button></th><td>1 <span class="artifact-breakdown">(1 lost / 0 gained)</span></td><td>1</td><td>0</td><td>7/9</td></tr>
+            <tr><th scope="row"><button class="artifact-link" data-artifact="tablegeo_s1" aria-haspopup="dialog">Warping <span aria-hidden="true">↗</span></button></th><td>3 <span class="artifact-breakdown">(2 lost / 1 gained)</span></td><td>0</td><td>0</td><td>8/9</td></tr>
+            <tr><th scope="row"><button class="artifact-link" data-artifact="fov_center" aria-haspopup="dialog">Central pinhole <span aria-hidden="true">↗</span></button></th><td>5 <span class="artifact-breakdown">(5 lost / 0 gained)</span></td><td>0</td><td>0</td><td>8/9</td></tr>
+            <tr><th scope="row"><button class="artifact-link" data-artifact="pinhole_adjacent_remove_30" aria-haspopup="dialog">Adjacent removal · 30% <span aria-hidden="true">↗</span></button></th><td>3 <span class="artifact-breakdown">(3 lost / 0 gained)</span></td><td>1</td><td>0</td><td>7/9</td></tr>
+            <tr><th scope="row"><button class="artifact-link" data-artifact="pinhole_random_remove_30" aria-haspopup="dialog">Random removal · 30% <span aria-hidden="true">↗</span></button></th><td>3 <span class="artifact-breakdown">(3 lost / 0 gained)</span></td><td>2</td><td>0</td><td>6/9</td></tr>
           </tbody>
         </table>
       </div>
@@ -159,5 +159,16 @@
   <section class="resources container" id="resources" aria-labelledby="resources-title"><div><p class="eyebrow">FOLLOW THE PROJECT</p><h2 id="resources-title">Building toward reproducible<br>real-to-sim evaluation.</h2><p>The public repository is in early development. A runnable pipeline,<br class="desktop-break"> evaluation code, and release documentation are planned.</p></div><a class="button primary" href="https://github.com/Hirotin/YUBI-Real2Sim">View on GitHub <span aria-hidden="true">↗</span></a></section>
 </main>
 <footer class="container footer"><a class="wordmark" href="#">YUBI<span>—</span>Real2Sim</a><p>Research in progress · September 2026</p><a href="https://github.com/Hirotin/YUBI-Real2Sim.github.io">Website source ↗</a></footer>
+<dialog id="artifact-viewer" aria-labelledby="artifact-viewer-title">
+  <div class="viewer-header"><div><p class="eyebrow">SCENE &amp; YUBI OBSERVATIONS</p><h2 id="artifact-viewer-title"></h2></div><button class="viewer-close" aria-label="Close image viewer">×</button></div>
+  <div class="viewer-scenes" role="group" aria-label="Choose scene"><button data-gallery-scene="Duo" aria-pressed="true">Duo</button><button data-gallery-scene="Flat" aria-pressed="false">Flat</button><button data-gallery-scene="G2" aria-pressed="false">G2</button></div>
+  <p class="viewer-status" aria-live="polite"></p>
+  <div class="viewer-images">
+    <figure><a target="_blank" rel="noopener"><img class="viewer-test" alt="" width="518" height="518"></a><figcaption>Scene rendering · held-out Test view</figcaption></figure>
+    <figure><a target="_blank" rel="noopener"><img alt="" width="719" height="539"></a><figcaption>YUBI OBS · right wrist</figcaption></figure>
+    <figure><a target="_blank" rel="noopener"><img alt="" width="719" height="539"></a><figcaption>YUBI OBS · left wrist</figcaption></figure>
+  </div>
+  <p class="viewer-note">Test view 60 is shown rotated 180°. OBS shows the initial recorded state, with the camera housing excluded and the full native image preserved. These are different viewpoints; OBS illustrations are before policy resizing and contrast adjustment. Click an image for full resolution.</p>
+</dialog>
 </body>
 </html>

@@ -1,0 +1,821 @@
+{
+  "description": "Archived held-out Test camera 60 and offline native YUBI OBS at recorded initial state; housing excluded, no cropping. Test rotation is CSS-only.",
+  "source_root": "ABCIQ cf_eval_final/outputs",
+  "render_jobs": [
+    "240939",
+    "240940",
+    "240941"
+  ],
+  "images": [
+    {
+      "file": "Duo_hole_54_test.png",
+      "scene": "Duo",
+      "variant": "hole_54",
+      "view": "test",
+      "width": 518,
+      "height": 518,
+      "sha256": "51bbcb434b49e04bb4fb52f433fb7931e62ea1a14de2009984cb2b50f4284118",
+      "source": "test_view_verification_20260916/Duo_Hole54/frames/frame_0060.png"
+    },
+    {
+      "file": "Duo_hole_54_right.png",
+      "scene": "Duo",
+      "variant": "hole_54",
+      "view": "right",
+      "width": 719,
+      "height": 539,
+      "sha256": "ae11744a3f56b4df8e374d661317bc5f4929d696c6eec05eb4ecbac9043268c7",
+      "source": "website_artifact_gallery_20261022/Duo_hole_54/frame_f0000/native_full/obs_R_f0000.png"
+    },
+    {
+      "file": "Duo_hole_54_left.png",
+      "scene": "Duo",
+      "variant": "hole_54",
+      "view": "left",
+      "width": 719,
+      "height": 539,
+      "sha256": "026d2c2796c07d38fc02d214089f2539d6cd46aadc35bd8459533b3c8c6c4ca0",
+      "source": "website_artifact_gallery_20261022/Duo_hole_54/frame_f0000/native_full/obs_L_f0000.png"
+    },
+    {
+      "file": "Duo_hole_90_test.png",
+      "scene": "Duo",
+      "variant": "hole_90",
+      "view": "test",
+      "width": 518,
+      "height": 518,
+      "sha256": "87c0db295bd2e7acb9e469c656ec464967fac010337cf8bfbcf37a20ea38dc94",
+      "source": "test_view_verification_20260916/Duo_Hole90/frames/frame_0060.png"
+    },
+    {
+      "file": "Duo_hole_90_right.png",
+      "scene": "Duo",
+      "variant": "hole_90",
+      "view": "right",
+      "width": 719,
+      "height": 539,
+      "sha256": "1a104b371e5ac56895a2b3d20cff21914bcc28e0de56ad814e46bc8f8a89c785",
+      "source": "website_artifact_gallery_20261022/Duo_hole_90/frame_f0000/native_full/obs_R_f0000.png"
+    },
+    {
+      "file": "Duo_hole_90_left.png",
+      "scene": "Duo",
+      "variant": "hole_90",
+      "view": "left",
+      "width": 719,
+      "height": 539,
+      "sha256": "d5a60df10b9191795f0843603aa5628f14f0a5a0ecdef11330921097271836f0",
+      "source": "website_artifact_gallery_20261022/Duo_hole_90/frame_f0000/native_full/obs_L_f0000.png"
+    },
+    {
+      "file": "Duo_float_low8_test.png",
+      "scene": "Duo",
+      "variant": "float_low8",
+      "view": "test",
+      "width": 518,
+      "height": 518,
+      "sha256": "704a217ccaee76c6df97e013495cb319388bb0987334eb5967bb62935d1250c6",
+      "source": "test_view_verification_floater_extremes_20260917/Duo/FloaterLow8/frames/frame_0060.png"
+    },
+    {
+      "file": "Duo_float_low8_right.png",
+      "scene": "Duo",
+      "variant": "float_low8",
+      "view": "right",
+      "width": 719,
+      "height": 539,
+      "sha256": "9d3ec16087fba7e44cc5f05b11dc784176acbc3cb4ad705913191f00c57efd02",
+      "source": "website_artifact_gallery_20261022/Duo_float_low8/frame_f0000/native_full/obs_R_f0000.png"
+    },
+    {
+      "file": "Duo_float_low8_left.png",
+      "scene": "Duo",
+      "variant": "float_low8",
+      "view": "left",
+      "width": 719,
+      "height": 539,
+      "sha256": "e08faeaf3ac2ac4c94ad2f34c4c616745c7d4772ffc5bfc1e43c9b2cd128aca0",
+      "source": "website_artifact_gallery_20261022/Duo_float_low8/frame_f0000/native_full/obs_L_f0000.png"
+    },
+    {
+      "file": "Duo_float_mid8_test.png",
+      "scene": "Duo",
+      "variant": "float_mid8",
+      "view": "test",
+      "width": 518,
+      "height": 518,
+      "sha256": "48982ab6d607dd062e2897384c063acdc191385378739888948490bf4e239768",
+      "source": "test_view_verification_20260916/Duo_FloaterMid8/frames/frame_0060.png"
+    },
+    {
+      "file": "Duo_float_mid8_right.png",
+      "scene": "Duo",
+      "variant": "float_mid8",
+      "view": "right",
+      "width": 719,
+      "height": 539,
+      "sha256": "0b364eb126b0227d957f17e378fdcd3b62f1f5a182fbc692f77d3dbfe86ee8de",
+      "source": "website_artifact_gallery_20261022/Duo_float_mid8/frame_f0000/native_full/obs_R_f0000.png"
+    },
+    {
+      "file": "Duo_float_mid8_left.png",
+      "scene": "Duo",
+      "variant": "float_mid8",
+      "view": "left",
+      "width": 719,
+      "height": 539,
+      "sha256": "1ca022afbe79625b97b4dd641da8475e810012ac9b592cc935c0e51bf4e2bb4f",
+      "source": "website_artifact_gallery_20261022/Duo_float_mid8/frame_f0000/native_full/obs_L_f0000.png"
+    },
+    {
+      "file": "Duo_float_high8_test.png",
+      "scene": "Duo",
+      "variant": "float_high8",
+      "view": "test",
+      "width": 518,
+      "height": 518,
+      "sha256": "38ef9ce9972500f317faf6a9516f2cc4b1d0919146a647b8f0fd34dd15b6c7f5",
+      "source": "test_view_verification_floater_extremes_20260917/Duo/FloaterHigh8/frames/frame_0060.png"
+    },
+    {
+      "file": "Duo_float_high8_right.png",
+      "scene": "Duo",
+      "variant": "float_high8",
+      "view": "right",
+      "width": 719,
+      "height": 539,
+      "sha256": "33bf71a507c35b4aa7e2ddba2a0ed5862b71adc11580c97afcd20e2a51995bf2",
+      "source": "website_artifact_gallery_20261022/Duo_float_high8/frame_f0000/native_full/obs_R_f0000.png"
+    },
+    {
+      "file": "Duo_float_high8_left.png",
+      "scene": "Duo",
+      "variant": "float_high8",
+      "view": "left",
+      "width": 719,
+      "height": 539,
+      "sha256": "5cb4fffc4e3ec809848a81e3a7d435d73f36b9b8cd0aa2dfd4acdaca8d4c24db",
+      "source": "website_artifact_gallery_20261022/Duo_float_high8/frame_f0000/native_full/obs_L_f0000.png"
+    },
+    {
+      "file": "Duo_tablegeo_s1_test.png",
+      "scene": "Duo",
+      "variant": "tablegeo_s1",
+      "view": "test",
+      "width": 518,
+      "height": 518,
+      "sha256": "fa3ce31e5cf2139d1ecc54030067e50ba3e1fab67e019130a13ab095a1550860",
+      "source": "test_view_verification_20260916/Duo_TableGeometryS1/frames/frame_0060.png"
+    },
+    {
+      "file": "Duo_tablegeo_s1_right.png",
+      "scene": "Duo",
+      "variant": "tablegeo_s1",
+      "view": "right",
+      "width": 719,
+      "height": 539,
+      "sha256": "b51e1951d334ed41b45e9ae57b97123a08f06595874b4aa86c22ea774456cfdb",
+      "source": "website_artifact_gallery_20261022/Duo_tablegeo_s1/frame_f0000/native_full/obs_R_f0000.png"
+    },
+    {
+      "file": "Duo_tablegeo_s1_left.png",
+      "scene": "Duo",
+      "variant": "tablegeo_s1",
+      "view": "left",
+      "width": 719,
+      "height": 539,
+      "sha256": "0050d54716daf85d8f627697bced5a2accb019e468e6b8352fd0322c43257ca4",
+      "source": "website_artifact_gallery_20261022/Duo_tablegeo_s1/frame_f0000/native_full/obs_L_f0000.png"
+    },
+    {
+      "file": "Duo_fov_center_test.png",
+      "scene": "Duo",
+      "variant": "fov_center",
+      "view": "test",
+      "width": 518,
+      "height": 518,
+      "sha256": "92ad8d02acd6da37702d99e2da4f1ed364af4318fecaf09db73a6cc152b2b436",
+      "source": "test_view_verification_viewcount_variants_20260916/Duo/CentralPinhole/frames/frame_0060.png"
+    },
+    {
+      "file": "Duo_fov_center_right.png",
+      "scene": "Duo",
+      "variant": "fov_center",
+      "view": "right",
+      "width": 719,
+      "height": 539,
+      "sha256": "907286ed121ca6c248d3e20624d5a460eb542d21b48297b131ea5ef4683fdfc9",
+      "source": "website_artifact_gallery_20261022/Duo_fov_center/frame_f0000/native_full/obs_R_f0000.png"
+    },
+    {
+      "file": "Duo_fov_center_left.png",
+      "scene": "Duo",
+      "variant": "fov_center",
+      "view": "left",
+      "width": 719,
+      "height": 539,
+      "sha256": "1b66b4c0d13c553ed4b5f388c22ba76f81552d38e149c0d5dcabe845f7cce6d8",
+      "source": "website_artifact_gallery_20261022/Duo_fov_center/frame_f0000/native_full/obs_L_f0000.png"
+    },
+    {
+      "file": "Duo_pinhole_adjacent_remove_30_test.png",
+      "scene": "Duo",
+      "variant": "pinhole_adjacent_remove_30",
+      "view": "test",
+      "width": 518,
+      "height": 518,
+      "sha256": "57418fe06450da2b20cd8e5dcbbd2a5af5a11ab7993dc79b4aada69331bc0219",
+      "source": "test_view_verification_viewcount_variants_20260916/Duo/Contiguous30/frames/frame_0060.png"
+    },
+    {
+      "file": "Duo_pinhole_adjacent_remove_30_right.png",
+      "scene": "Duo",
+      "variant": "pinhole_adjacent_remove_30",
+      "view": "right",
+      "width": 719,
+      "height": 539,
+      "sha256": "c44fd648c0d35e3896fa3996e7434aaa7540ff400b00028d21240a9e5d1f29b7",
+      "source": "website_artifact_gallery_20261022/Duo_pinhole_adjacent_remove_30/frame_f0000/native_full/obs_R_f0000.png"
+    },
+    {
+      "file": "Duo_pinhole_adjacent_remove_30_left.png",
+      "scene": "Duo",
+      "variant": "pinhole_adjacent_remove_30",
+      "view": "left",
+      "width": 719,
+      "height": 539,
+      "sha256": "04bf07b64c6969335eeb5478bc300c714fde9173966a6336f3fcdf7484edc824",
+      "source": "website_artifact_gallery_20261022/Duo_pinhole_adjacent_remove_30/frame_f0000/native_full/obs_L_f0000.png"
+    },
+    {
+      "file": "Duo_pinhole_random_remove_30_test.png",
+      "scene": "Duo",
+      "variant": "pinhole_random_remove_30",
+      "view": "test",
+      "width": 518,
+      "height": 518,
+      "sha256": "437d506e8a66ec3195f3279baaf57e9315e679dc43a8a1a4927a544c8e9db369",
+      "source": "test_view_verification_viewcount_random30_20260916/Duo/ViewCountRandom30/frames/frame_0060.png"
+    },
+    {
+      "file": "Duo_pinhole_random_remove_30_right.png",
+      "scene": "Duo",
+      "variant": "pinhole_random_remove_30",
+      "view": "right",
+      "width": 719,
+      "height": 539,
+      "sha256": "1a9da69f5461f69050f5be8c52d61e5ce1a1712fa5f5e37971a39e4aa6b214ba",
+      "source": "website_artifact_gallery_20261022/Duo_pinhole_random_remove_30/frame_f0000/native_full/obs_R_f0000.png"
+    },
+    {
+      "file": "Duo_pinhole_random_remove_30_left.png",
+      "scene": "Duo",
+      "variant": "pinhole_random_remove_30",
+      "view": "left",
+      "width": 719,
+      "height": 539,
+      "sha256": "e283e617d67b050272b7dc2446cd5500a9255e5b07c05e6c7805d1cd99cc88c6",
+      "source": "website_artifact_gallery_20261022/Duo_pinhole_random_remove_30/frame_f0000/native_full/obs_L_f0000.png"
+    },
+    {
+      "file": "Flat_hole_54_test.png",
+      "scene": "Flat",
+      "variant": "hole_54",
+      "view": "test",
+      "width": 518,
+      "height": 518,
+      "sha256": "40a737b78afb327293f20f419675c7e9ca88a0c409c6928f6f8b4e95158ec228",
+      "source": "test_view_verification_20260916/Flat_Hole54/frames/frame_0060.png"
+    },
+    {
+      "file": "Flat_hole_54_right.png",
+      "scene": "Flat",
+      "variant": "hole_54",
+      "view": "right",
+      "width": 719,
+      "height": 539,
+      "sha256": "46a0f19110da47ad930888fb183c2f09e3d751fc8891a436f15e0b082614bcd6",
+      "source": "website_artifact_gallery_20261022/Flat_hole_54/frame_f0000/native_full/obs_R_f0000.png"
+    },
+    {
+      "file": "Flat_hole_54_left.png",
+      "scene": "Flat",
+      "variant": "hole_54",
+      "view": "left",
+      "width": 719,
+      "height": 539,
+      "sha256": "c7f2a02de8dbfdcd9e2695aa918413e8a2861be4688c9c2c8834b87302ab17c9",
+      "source": "website_artifact_gallery_20261022/Flat_hole_54/frame_f0000/native_full/obs_L_f0000.png"
+    },
+    {
+      "file": "Flat_hole_90_test.png",
+      "scene": "Flat",
+      "variant": "hole_90",
+      "view": "test",
+      "width": 518,
+      "height": 518,
+      "sha256": "732d7093f9675655656ba031c20097da32c3bfb2737bf7e779e1cfb0e41ada67",
+      "source": "test_view_verification_20260916/Flat_Hole90/frames/frame_0060.png"
+    },
+    {
+      "file": "Flat_hole_90_right.png",
+      "scene": "Flat",
+      "variant": "hole_90",
+      "view": "right",
+      "width": 719,
+      "height": 539,
+      "sha256": "6cae75e21ec6eef1ab28529e0e4e469c7ad65c427936036723994655aaab928e",
+      "source": "website_artifact_gallery_20261022/Flat_hole_90/frame_f0000/native_full/obs_R_f0000.png"
+    },
+    {
+      "file": "Flat_hole_90_left.png",
+      "scene": "Flat",
+      "variant": "hole_90",
+      "view": "left",
+      "width": 719,
+      "height": 539,
+      "sha256": "90424ea78a1958c16df0461b9996ccc2aad838a2ac894fd15d53f5e1e4e7e37b",
+      "source": "website_artifact_gallery_20261022/Flat_hole_90/frame_f0000/native_full/obs_L_f0000.png"
+    },
+    {
+      "file": "Flat_float_low8_test.png",
+      "scene": "Flat",
+      "variant": "float_low8",
+      "view": "test",
+      "width": 518,
+      "height": 518,
+      "sha256": "90e73edda5a1a38911b67f0ee1513cde305c809de42d9beb934e8fc043fd17f7",
+      "source": "test_view_verification_floater_extremes_20260917/Flat/FloaterLow8/frames/frame_0060.png"
+    },
+    {
+      "file": "Flat_float_low8_right.png",
+      "scene": "Flat",
+      "variant": "float_low8",
+      "view": "right",
+      "width": 719,
+      "height": 539,
+      "sha256": "7715e2a3571b3d7e4de890e404337d7b684395dd19d2cb17ef927a6a45ce5f3f",
+      "source": "website_artifact_gallery_20261022/Flat_float_low8/frame_f0000/native_full/obs_R_f0000.png"
+    },
+    {
+      "file": "Flat_float_low8_left.png",
+      "scene": "Flat",
+      "variant": "float_low8",
+      "view": "left",
+      "width": 719,
+      "height": 539,
+      "sha256": "e9ec62f381f5f927a1b147755c1caa18ad26e2a840a2e8d21d0b86f1223b0cf3",
+      "source": "website_artifact_gallery_20261022/Flat_float_low8/frame_f0000/native_full/obs_L_f0000.png"
+    },
+    {
+      "file": "Flat_float_mid8_test.png",
+      "scene": "Flat",
+      "variant": "float_mid8",
+      "view": "test",
+      "width": 518,
+      "height": 518,
+      "sha256": "7b0859be014e4cc51980feacef50cd9282b957eb36a9867f4d2b2a7ad19697d5",
+      "source": "test_view_verification_20260916/Flat_FloaterMid8/frames/frame_0060.png"
+    },
+    {
+      "file": "Flat_float_mid8_right.png",
+      "scene": "Flat",
+      "variant": "float_mid8",
+      "view": "right",
+      "width": 719,
+      "height": 539,
+      "sha256": "e9e29758e52d4b405252a4971ab0d011c11467864d25e1f3c177e7ca851bbd33",
+      "source": "website_artifact_gallery_20261022/Flat_float_mid8/frame_f0000/native_full/obs_R_f0000.png"
+    },
+    {
+      "file": "Flat_float_mid8_left.png",
+      "scene": "Flat",
+      "variant": "float_mid8",
+      "view": "left",
+      "width": 719,
+      "height": 539,
+      "sha256": "0a58cde25f932e6dfc315951e92ea854dd39da3199d0c01928204f1e879fe7f3",
+      "source": "website_artifact_gallery_20261022/Flat_float_mid8/frame_f0000/native_full/obs_L_f0000.png"
+    },
+    {
+      "file": "Flat_float_high8_test.png",
+      "scene": "Flat",
+      "variant": "float_high8",
+      "view": "test",
+      "width": 518,
+      "height": 518,
+      "sha256": "ce20161c871a696c9e02b22a3904dd5ac9d2687680e47117e44e40767b018446",
+      "source": "test_view_verification_floater_extremes_20260917/Flat/FloaterHigh8/frames/frame_0060.png"
+    },
+    {
+      "file": "Flat_float_high8_right.png",
+      "scene": "Flat",
+      "variant": "float_high8",
+      "view": "right",
+      "width": 719,
+      "height": 539,
+      "sha256": "df6817ee0714043ae358eabc99ecc0aa6a5873fab9e0769c7296e9ec2d684363",
+      "source": "website_artifact_gallery_20261022/Flat_float_high8/frame_f0000/native_full/obs_R_f0000.png"
+    },
+    {
+      "file": "Flat_float_high8_left.png",
+      "scene": "Flat",
+      "variant": "float_high8",
+      "view": "left",
+      "width": 719,
+      "height": 539,
+      "sha256": "240b9c88561f6038d422e870d612aae8f689df20224e6244b4b88d9c44bd0236",
+      "source": "website_artifact_gallery_20261022/Flat_float_high8/frame_f0000/native_full/obs_L_f0000.png"
+    },
+    {
+      "file": "Flat_tablegeo_s1_test.png",
+      "scene": "Flat",
+      "variant": "tablegeo_s1",
+      "view": "test",
+      "width": 518,
+      "height": 518,
+      "sha256": "99e9e6c0638436f31b5ee1a447abe7bc33eb2c34ae09c82f8364006269783710",
+      "source": "test_view_verification_20260916/Flat_TableGeometryS1/frames/frame_0060.png"
+    },
+    {
+      "file": "Flat_tablegeo_s1_right.png",
+      "scene": "Flat",
+      "variant": "tablegeo_s1",
+      "view": "right",
+      "width": 719,
+      "height": 539,
+      "sha256": "ad2fc61177ccfc07cdb27dd11f5908cf1d60af019d82fa4f63cdd15f87539334",
+      "source": "website_artifact_gallery_20261022/Flat_tablegeo_s1/frame_f0000/native_full/obs_R_f0000.png"
+    },
+    {
+      "file": "Flat_tablegeo_s1_left.png",
+      "scene": "Flat",
+      "variant": "tablegeo_s1",
+      "view": "left",
+      "width": 719,
+      "height": 539,
+      "sha256": "a2ada63159a82cfa743d0963b307cd245bb887043482eecf33acd93daf200b0a",
+      "source": "website_artifact_gallery_20261022/Flat_tablegeo_s1/frame_f0000/native_full/obs_L_f0000.png"
+    },
+    {
+      "file": "Flat_fov_center_test.png",
+      "scene": "Flat",
+      "variant": "fov_center",
+      "view": "test",
+      "width": 518,
+      "height": 518,
+      "sha256": "fa7a3d69f4f173e23223c2313fa327fffb9968447f5c73cd3a0d843fb99b70fa",
+      "source": "test_view_verification_viewcount_variants_20260916/Flat/CentralPinhole/frames/frame_0060.png"
+    },
+    {
+      "file": "Flat_fov_center_right.png",
+      "scene": "Flat",
+      "variant": "fov_center",
+      "view": "right",
+      "width": 719,
+      "height": 539,
+      "sha256": "3be5b5b925af084bae483e6d7c0c0024fd1ef47a52cb1b8cdc2887c6bf13d9ec",
+      "source": "website_artifact_gallery_20261022/Flat_fov_center/frame_f0000/native_full/obs_R_f0000.png"
+    },
+    {
+      "file": "Flat_fov_center_left.png",
+      "scene": "Flat",
+      "variant": "fov_center",
+      "view": "left",
+      "width": 719,
+      "height": 539,
+      "sha256": "45b89fe7bb28c772468779ae8fc5c2225da4a7491cc4ad8c370a19b15f3acba7",
+      "source": "website_artifact_gallery_20261022/Flat_fov_center/frame_f0000/native_full/obs_L_f0000.png"
+    },
+    {
+      "file": "Flat_pinhole_adjacent_remove_30_test.png",
+      "scene": "Flat",
+      "variant": "pinhole_adjacent_remove_30",
+      "view": "test",
+      "width": 518,
+      "height": 518,
+      "sha256": "f5b0a23fa2189179c90b7374200079efab25b6cb509407542f10b20b3e53eb3a",
+      "source": "test_view_verification_viewcount_variants_20260916/Flat/Contiguous30/frames/frame_0060.png"
+    },
+    {
+      "file": "Flat_pinhole_adjacent_remove_30_right.png",
+      "scene": "Flat",
+      "variant": "pinhole_adjacent_remove_30",
+      "view": "right",
+      "width": 719,
+      "height": 539,
+      "sha256": "1df82aa0fd02bdd6a4be681d6d0b8657af9a81c33b6702404117362e34e8aa0e",
+      "source": "website_artifact_gallery_20261022/Flat_pinhole_adjacent_remove_30/frame_f0000/native_full/obs_R_f0000.png"
+    },
+    {
+      "file": "Flat_pinhole_adjacent_remove_30_left.png",
+      "scene": "Flat",
+      "variant": "pinhole_adjacent_remove_30",
+      "view": "left",
+      "width": 719,
+      "height": 539,
+      "sha256": "f540e7dba8d7940443d8251cdfdb9416a003c7c448568fa0079c2fd3cb5e198c",
+      "source": "website_artifact_gallery_20261022/Flat_pinhole_adjacent_remove_30/frame_f0000/native_full/obs_L_f0000.png"
+    },
+    {
+      "file": "Flat_pinhole_random_remove_30_test.png",
+      "scene": "Flat",
+      "variant": "pinhole_random_remove_30",
+      "view": "test",
+      "width": 518,
+      "height": 518,
+      "sha256": "7092c78a9eb2445b13a18e2a4572c5386268a844258e29a3329ad2cdc02e28ec",
+      "source": "test_view_verification_viewcount_random30_20260916/Flat/ViewCountRandom30/frames/frame_0060.png"
+    },
+    {
+      "file": "Flat_pinhole_random_remove_30_right.png",
+      "scene": "Flat",
+      "variant": "pinhole_random_remove_30",
+      "view": "right",
+      "width": 719,
+      "height": 539,
+      "sha256": "1af8668b7fae5a926c4ef6487e573572654ae57d2b6d66afc84db6feff50b2cf",
+      "source": "website_artifact_gallery_20261022/Flat_pinhole_random_remove_30/frame_f0000/native_full/obs_R_f0000.png"
+    },
+    {
+      "file": "Flat_pinhole_random_remove_30_left.png",
+      "scene": "Flat",
+      "variant": "pinhole_random_remove_30",
+      "view": "left",
+      "width": 719,
+      "height": 539,
+      "sha256": "63963d3a1b904f7ba759548afdc31137e3b5fc23a528bc1974554a0d6b40bf49",
+      "source": "website_artifact_gallery_20261022/Flat_pinhole_random_remove_30/frame_f0000/native_full/obs_L_f0000.png"
+    },
+    {
+      "file": "G2_hole_54_test.png",
+      "scene": "G2",
+      "variant": "hole_54",
+      "view": "test",
+      "width": 518,
+      "height": 518,
+      "sha256": "b9e3554c2ea2f74f501f4adda2ce9f4d827c7b6fa7cdf7906b8d584dea421011",
+      "source": "test_view_verification_20260916/G2_Hole54/frames/frame_0060.png"
+    },
+    {
+      "file": "G2_hole_54_right.png",
+      "scene": "G2",
+      "variant": "hole_54",
+      "view": "right",
+      "width": 719,
+      "height": 539,
+      "sha256": "60bff55c3bc839502ae7a0d935391672625492cad4344aa0582c161b2a63b23d",
+      "source": "website_artifact_gallery_20261022/G2_hole_54/frame_f0000/native_full/obs_R_f0000.png"
+    },
+    {
+      "file": "G2_hole_54_left.png",
+      "scene": "G2",
+      "variant": "hole_54",
+      "view": "left",
+      "width": 719,
+      "height": 539,
+      "sha256": "3f111621985ea6b55441f170c7839fc98a009344611ffe9446c0de7c8a83ed76",
+      "source": "website_artifact_gallery_20261022/G2_hole_54/frame_f0000/native_full/obs_L_f0000.png"
+    },
+    {
+      "file": "G2_hole_90_test.png",
+      "scene": "G2",
+      "variant": "hole_90",
+      "view": "test",
+      "width": 518,
+      "height": 518,
+      "sha256": "710b52009f959cc838c8a6ae7b94a88bc17f678f3e4f2875c70503e8ec795d24",
+      "source": "test_view_verification_20260916/G2_Hole90/frames/frame_0060.png"
+    },
+    {
+      "file": "G2_hole_90_right.png",
+      "scene": "G2",
+      "variant": "hole_90",
+      "view": "right",
+      "width": 719,
+      "height": 539,
+      "sha256": "88c6df2b7bb389cf2443a1929b2a0200dc2b717afb4a641a229d124be7234f80",
+      "source": "website_artifact_gallery_20261022/G2_hole_90/frame_f0000/native_full/obs_R_f0000.png"
+    },
+    {
+      "file": "G2_hole_90_left.png",
+      "scene": "G2",
+      "variant": "hole_90",
+      "view": "left",
+      "width": 719,
+      "height": 539,
+      "sha256": "f1aa8c5da970f35465b0013cd0c2dde7579b222c0a210b719d83923b8db453c6",
+      "source": "website_artifact_gallery_20261022/G2_hole_90/frame_f0000/native_full/obs_L_f0000.png"
+    },
+    {
+      "file": "G2_float_low8_test.png",
+      "scene": "G2",
+      "variant": "float_low8",
+      "view": "test",
+      "width": 518,
+      "height": 518,
+      "sha256": "de4388a6fe69d7f33be40578d83e1d2d23609d3cce714a05da14d5aab435177e",
+      "source": "test_view_verification_floater_extremes_20260917/G2/FloaterLow8/frames/frame_0060.png"
+    },
+    {
+      "file": "G2_float_low8_right.png",
+      "scene": "G2",
+      "variant": "float_low8",
+      "view": "right",
+      "width": 719,
+      "height": 539,
+      "sha256": "e6207480817eae387c55aafb3eddb1c5a22fe67427a5ee4555045651b5c463f0",
+      "source": "website_artifact_gallery_20261022/G2_float_low8/frame_f0000/native_full/obs_R_f0000.png"
+    },
+    {
+      "file": "G2_float_low8_left.png",
+      "scene": "G2",
+      "variant": "float_low8",
+      "view": "left",
+      "width": 719,
+      "height": 539,
+      "sha256": "61a99b08166387c420d2f7fd73a40fbb7bb25176bf03979e5409ba981791f020",
+      "source": "website_artifact_gallery_20261022/G2_float_low8/frame_f0000/native_full/obs_L_f0000.png"
+    },
+    {
+      "file": "G2_float_mid8_test.png",
+      "scene": "G2",
+      "variant": "float_mid8",
+      "view": "test",
+      "width": 518,
+      "height": 518,
+      "sha256": "d2514ef04467f2b64552a6d36c7bf600d249ac39afaea49e772181250201daac",
+      "source": "test_view_verification_20260916/G2_FloaterMid8/frames/frame_0060.png"
+    },
+    {
+      "file": "G2_float_mid8_right.png",
+      "scene": "G2",
+      "variant": "float_mid8",
+      "view": "right",
+      "width": 719,
+      "height": 539,
+      "sha256": "e87a713fbb369ddf6b42d1f0af3975f9e6b620085a6f42479da5e98dff57ab70",
+      "source": "website_artifact_gallery_20261022/G2_float_mid8/frame_f0000/native_full/obs_R_f0000.png"
+    },
+    {
+      "file": "G2_float_mid8_left.png",
+      "scene": "G2",
+      "variant": "float_mid8",
+      "view": "left",
+      "width": 719,
+      "height": 539,
+      "sha256": "d7176394ed9daf3589f0112e14e250941fbe0df647c9998267e16bd261455edc",
+      "source": "website_artifact_gallery_20261022/G2_float_mid8/frame_f0000/native_full/obs_L_f0000.png"
+    },
+    {
+      "file": "G2_float_high8_test.png",
+      "scene": "G2",
+      "variant": "float_high8",
+      "view": "test",
+      "width": 518,
+      "height": 518,
+      "sha256": "098342a3386ef6fedaebe11ad373bc76008e753bafd753ba5e7df20b41b655f0",
+      "source": "test_view_verification_floater_extremes_20260917/G2/FloaterHigh8/frames/frame_0060.png"
+    },
+    {
+      "file": "G2_float_high8_right.png",
+      "scene": "G2",
+      "variant": "float_high8",
+      "view": "right",
+      "width": 719,
+      "height": 539,
+      "sha256": "ae3c97279f8049642baa93ed3a68fe8ceb27e120933d5ce6ec934746c8ce55f1",
+      "source": "website_artifact_gallery_20261022/G2_float_high8/frame_f0000/native_full/obs_R_f0000.png"
+    },
+    {
+      "file": "G2_float_high8_left.png",
+      "scene": "G2",
+      "variant": "float_high8",
+      "view": "left",
+      "width": 719,
+      "height": 539,
+      "sha256": "d033748a3362fd4e4549679c3021a795b5e53603a4a3371dbd6bd4e0e489036e",
+      "source": "website_artifact_gallery_20261022/G2_float_high8/frame_f0000/native_full/obs_L_f0000.png"
+    },
+    {
+      "file": "G2_tablegeo_s1_test.png",
+      "scene": "G2",
+      "variant": "tablegeo_s1",
+      "view": "test",
+      "width": 518,
+      "height": 518,
+      "sha256": "468c4ad26b4e27b2d225cbcbc8498cf0d330da16987ec4385b663a3e658fcedd",
+      "source": "test_view_verification_20260916/G2_TableGeometryS1/frames/frame_0060.png"
+    },
+    {
+      "file": "G2_tablegeo_s1_right.png",
+      "scene": "G2",
+      "variant": "tablegeo_s1",
+      "view": "right",
+      "width": 719,
+      "height": 539,
+      "sha256": "c711cf1e87f2d656d3fccb5f1d42fca79ebd2ecb49d7714db6fa45fc39a6f8b2",
+      "source": "website_artifact_gallery_20261022/G2_tablegeo_s1/frame_f0000/native_full/obs_R_f0000.png"
+    },
+    {
+      "file": "G2_tablegeo_s1_left.png",
+      "scene": "G2",
+      "variant": "tablegeo_s1",
+      "view": "left",
+      "width": 719,
+      "height": 539,
+      "sha256": "612d9c4638f9030f61289acfb1b2832a6de36f93bc7ef6664e7a7b07960176cf",
+      "source": "website_artifact_gallery_20261022/G2_tablegeo_s1/frame_f0000/native_full/obs_L_f0000.png"
+    },
+    {
+      "file": "G2_fov_center_test.png",
+      "scene": "G2",
+      "variant": "fov_center",
+      "view": "test",
+      "width": 518,
+      "height": 518,
+      "sha256": "db71c4d5121521b0298d11b3a42186ab1756220c8d75505b3c7feac4a27f2388",
+      "source": "test_view_verification_viewcount_variants_20260916/G2/CentralPinhole/frames/frame_0060.png"
+    },
+    {
+      "file": "G2_fov_center_right.png",
+      "scene": "G2",
+      "variant": "fov_center",
+      "view": "right",
+      "width": 719,
+      "height": 539,
+      "sha256": "0a2f6a96230e72536ee0c716620f2ee658165ffa5ec34f4606150517a933ad78",
+      "source": "website_artifact_gallery_20261022/G2_fov_center/frame_f0000/native_full/obs_R_f0000.png"
+    },
+    {
+      "file": "G2_fov_center_left.png",
+      "scene": "G2",
+      "variant": "fov_center",
+      "view": "left",
+      "width": 719,
+      "height": 539,
+      "sha256": "3d8f721e3e1c2a14d17459cfd42cddb0eafacdcc830b911d7f656d3529174c98",
+      "source": "website_artifact_gallery_20261022/G2_fov_center/frame_f0000/native_full/obs_L_f0000.png"
+    },
+    {
+      "file": "G2_pinhole_adjacent_remove_30_test.png",
+      "scene": "G2",
+      "variant": "pinhole_adjacent_remove_30",
+      "view": "test",
+      "width": 518,
+      "height": 518,
+      "sha256": "3594152bb0195f1823779ad8eff0e41312998a46fd9572034659e7833ad6fbe9",
+      "source": "test_view_verification_viewcount_variants_20260916/G2/Contiguous30/frames/frame_0060.png"
+    },
+    {
+      "file": "G2_pinhole_adjacent_remove_30_right.png",
+      "scene": "G2",
+      "variant": "pinhole_adjacent_remove_30",
+      "view": "right",
+      "width": 719,
+      "height": 539,
+      "sha256": "36ff999eddf3d63e7cf6d4d80c48d94ce9ff71d52dd818c7d3204c6253d5dc69",
+      "source": "website_artifact_gallery_20261022/G2_pinhole_adjacent_remove_30/frame_f0000/native_full/obs_R_f0000.png"
+    },
+    {
+      "file": "G2_pinhole_adjacent_remove_30_left.png",
+      "scene": "G2",
+      "variant": "pinhole_adjacent_remove_30",
+      "view": "left",
+      "width": 719,
+      "height": 539,
+      "sha256": "008702fd6a5b6f7a4246a6122bc26205712b0cd1f4ca00ca65f0ebecb0a0dad3",
+      "source": "website_artifact_gallery_20261022/G2_pinhole_adjacent_remove_30/frame_f0000/native_full/obs_L_f0000.png"
+    },
+    {
+      "file": "G2_pinhole_random_remove_30_test.png",
+      "scene": "G2",
+      "variant": "pinhole_random_remove_30",
+      "view": "test",
+      "width": 518,
+      "height": 518,
+      "sha256": "20a2c8486c797502d33487317ada69477e36d8dba2ac50d62cf50d810872740e",
+      "source": "test_view_verification_viewcount_random30_20260916/G2/ViewCountRandom30/frames/frame_0060.png"
+    },
+    {
+      "file": "G2_pinhole_random_remove_30_right.png",
+      "scene": "G2",
+      "variant": "pinhole_random_remove_30",
+      "view": "right",
+      "width": 719,
+      "height": 539,
+      "sha256": "670dd989ca61f0decf8d14f6351bf91bdb3883fe2acba2d1e732a2effb11e398",
+      "source": "website_artifact_gallery_20261022/G2_pinhole_random_remove_30/frame_f0000/native_full/obs_R_f0000.png"
+    },
+    {
+      "file": "G2_pinhole_random_remove_30_left.png",
+      "scene": "G2",
+      "variant": "pinhole_random_remove_30",
+      "view": "left",
+      "width": 719,
+      "height": 539,
+      "sha256": "9703724bf98d6a9e65ca90d13d2403b17e78a82635c274df98494cd407a41b46",
+      "source": "website_artifact_gallery_20261022/G2_pinhole_random_remove_30/frame_f0000/native_full/obs_L_f0000.png"
+    }
+  ]
+}

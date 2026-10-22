@@ -56,3 +56,9 @@ The public comparison omits the original OBS row and labels the housing-correcte
 ## Artifact transition summary
 
 The artifact table uses the ordinary / All rows of the manuscript’s `docs/experiments/final_20260917/computed/aggregate_results.csv`. All nine conditions are shown separately, each with nine comparisons including Pen. Counts were checked against `pair_results.csv`, including significance-threshold crossings and strict rank reversals. `assets/artifact-results.json` preserves the counts, definitions, and audit-flag totals. This is the provisional intended-label snapshot with historical nonmatched Clean references, not the restricted execution-audited subset. Public notes explicitly retain that distinction.
+
+## Artifact image viewer
+
+The nine condition names in the transition table and the three artifact card headings open a native dialog. Duo, Flat, and G2 can be selected inside it; each view contains a held-out scene rendering and full right/left YUBI wrist illustrations. Escape, the close button, and backdrop clicks close the dialog. Images link to their original resolution.
+
+Gallery Test images use archived `frame_0060.png` from the condition-specific held-out verification renders, displayed with a CSS 180° rotation. OBS illustrations replay only saved frame 0 using `website_obs_full_view_20261022/render_trajectory_obs_full_view.py`, excluding camera-housing geoms and saving `frame_f0000/native_full/obs_{R,L}_f0000.png` at 719×539. They are full native views before policy contrast adjustment/resizing, distinct from the 518×518 score inputs. No new policy rollouts or real-robot operations are involved. Remote evidence: `abciq:/groups/qgah50055/qch10159hn/cf_eval_final/outputs/website_artifact_gallery_20261022/`; jobs 240939–240941. The gallery manifest records source paths and file hashes.
