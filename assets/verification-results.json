@@ -70,19 +70,7 @@
       "all_three_decisions": 15
     },
     {
-      "method": "NVS-SQA / OBS \u00b7 original",
-      "correct_by_task": {
-        "Cup": 12,
-        "Tape": 2,
-        "Pen": 15
-      },
-      "total_correct": 29,
-      "total_decisions": 45,
-      "all_three_correct": 7,
-      "all_three_decisions": 15
-    },
-    {
-      "method": "NVS-SQA / OBS \u00b7 housing removed",
+      "method": "NVS-SQA / OBS",
       "correct_by_task": {
         "Cup": 13,
         "Tape": 4,
